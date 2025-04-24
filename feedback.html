@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Labs</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="/image/v.jpg" alt="Virtual Labs Logo" />
+            <h2>Virtual Labs</h2>
+        </div>
+        <div class="navbar-right">
+            <span>★★★★☆</span>
+            <button>Rate Me</button>
+            <button>Report a Bug</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <a href="/aim/aim.html">Aim</a>
+            <a href="/Theory/theory.html">Theory</a>
+            <a href="/pretest/pretest.html">Pretest</a>
+            <a href="/procedure/procedure.html">Procedure</a>
+            <a href="/simulation/simulation.html">Simulation</a>
+            <a href="/posttest/posttest.html">Posttest</a>
+            <a href="/reference/reference.html">References</a>
+            <a href="/feedback/feedback.html"><u>Feedback</u></a>
+        </div>
+
+        <main class="my-section">
+            <br>
+            <h1>Student Feedback Form</h1>
+            <div class="container">
+                <form action="/submit-feedback" method="POST">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <br><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <br><br>
+
+                    <label for="course">Course</label>
+                    <input type="text" id="course" name="course" placeholder="Enter your course name" required>
+                    <br><br>
+
+                    <label for="rating">Rate Your Experience</label>
+                    <select id="rating" name="rating">
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                    <br><br>
+
+                    <div class="form-container">
+                        <h1>Questionnaire</h1>
+                        <p>Please share your experience using the virtual lab by answering the following questions:</p>
+
+                        <div class="question">
+                            <label>1. The virtual lab interface was easy to navigate.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q1" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q1" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q1" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q1" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>2. The instructions provided in the virtual lab were clear.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q2" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q2" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q2" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q2" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>3. The virtual lab simulations were realistic and engaging.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q3" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q3" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q3" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q3" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>4. The virtual lab helped me understand the concepts better.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q4" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q4" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q4" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q4" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>5. The technical performance of the virtual lab was satisfactory.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q5" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q5" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q5" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q5" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>6. I would recommend the virtual lab to other students.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q6" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q6" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q6" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q6" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>7. The virtual lab contributed to my overall learning experience.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q7" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q7" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q7" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q7" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>8. The content of the virtual lab aligned with the course objectives.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q8" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q8" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q8" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q8" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>9. The virtual lab was accessible and user-friendly.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q9" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q9" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q9" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q9" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <div class="question">
+                            <label>10. Overall, I am satisfied with the virtual lab experience.</label>
+                            <div class="options">
+                                <label><input type="radio" name="q10" value="Strongly Agree" required> Strongly
+                                    Agree</label><br>
+                                <label><input type="radio" name="q10" value="Agree"> Agree</label><br>
+                                <label><input type="radio" name="q10" value="Neutral"> Neutral</label><br>
+                                <label><input type="radio" name="q10" value="Disagree"> Disagree</label>
+                            </div>
+                        </div><br>
+
+                        <label for="feedback">Feedback</label><br>
+                        <textarea id="feedback" name="feedback" placeholder="Share your feedback here..."></textarea>
+                        <br><br>
+
+                        <button type="submit">Submit Feedback</button>
+                        <br><br><br><br>
+
+                    </div>
+
+
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
